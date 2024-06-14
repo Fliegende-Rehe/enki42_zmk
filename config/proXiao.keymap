@@ -66,7 +66,7 @@
 &kp ESC             &kp Q          &kp W            &mt EQUAL E   &kp R  &mt GRAVE T             &kp Y                    &mt UNDER U  &mt EXCLAMATION I  &kp O    &mt PERCENT P  &mt DEL BACKSPACE
 &mt LEFT_SHIFT TAB  &mt AT_SIGN A  &mt ASTERISK S   &mt DOLLAR D  &kp F  &kp G                   &mt HASH H               &kp J        &kp K              &kp L    &kp SEMI       &kp SQT
 &mt LCTRL LEFT_GUI  &kp Z          &mt AMPERSAND X  &mt CARET C   &kp V  &mt LEFT_PARENTHESIS B  &mt RIGHT_PARENTHESIS N  &mt MINUS M  &kp COMMA          &kp DOT  &kp FSLH       &mt RIGHT_BRACKET LEFT_BRACKET
-                                                    &to 1         &to 2  &kp SPACE               &kp ENTER                &to 2        &to 1
+                                                    &to 1         &to 2  &mt LEFT_ALT SPACE      &mt LS(LEFT_ALT) ENTER   &to 2        &to 1
             >;
         };
 
