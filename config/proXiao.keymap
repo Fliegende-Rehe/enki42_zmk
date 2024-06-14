@@ -66,7 +66,7 @@
 &kp ESC             &kp Q          &kp W            &mt EQUAL E   &kp R  &mt GRAVE T             &kp Y                    &mt UNDER U  &mt EXCLAMATION I  &kp O    &mt PERCENT P  &mt DEL BACKSPACE
 &mt LEFT_SHIFT TAB  &mt AT_SIGN A  &mt ASTERISK S   &mt DOLLAR D  &kp F  &kp G                   &mt HASH H               &kp J        &kp K              &kp L    &kp SEMI       &kp SQT
 &mt LCTRL LEFT_GUI  &kp Z          &mt AMPERSAND X  &mt CARET C   &kp V  &mt LEFT_PARENTHESIS B  &mt RIGHT_PARENTHESIS N  &mt MINUS M  &kp COMMA          &kp DOT  &kp FSLH       &mt RIGHT_BRACKET LEFT_BRACKET
-                                                    &to 1         &to 2  &mt LEFT_ALT SPACE      &mt LS(LEFT_ALT) ENTER   &to 2        &to 1
+                                                    &mo 1         &mo 2  &mt LEFT_ALT SPACE      &mt LS(LEFT_ALT) ENTER   &mo 2        &mo 1
             >;
         };
 
@@ -78,10 +78,10 @@
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&kp LG(LS(S))   &none     &kp UP_ARROW    &none      &none   &kp C_VOLUME_UP  &kp C_NEXT        &none   &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&kp LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none   &kp C_VOL_DN     &kp C_PLAY_PAUSE  &none   &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6
-&none           &none     &none           &none      &none   &kp K_MUTE       &kp C_PREVIOUS    &none   &none  &kp N7        &kp N8        &kp N9
-                                          &to 0      &trans  &trans           &trans            &trans  &to 0
+&kp LG(LS(S))   &none     &kp UP_ARROW    &none      &none  &kp C_VOLUME_UP  &kp C_NEXT        &none  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&kp LEFT_SHIFT  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none  &kp C_VOL_DN     &kp C_PLAY_PAUSE  &none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&none           &none     &none           &none      &none  &kp C_MUTE       &kp C_PREVIOUS    &none  &none  &kp N7        &kp N8        &kp N9
+                                          &to 0      &none  &none            &none             &none  &to 0
             >;
         };
 
