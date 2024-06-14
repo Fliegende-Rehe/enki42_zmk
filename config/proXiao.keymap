@@ -13,8 +13,6 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick_tap_ms = <220>; };
-
 &mt { quick_tap_ms = <220>; };
 
 / {
@@ -52,6 +50,18 @@
 };
 
 / {
+    behaviors {
+        HT: HT {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <399>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,7 +73,7 @@
             //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp ESC             &kp Q          &kp W            &mt EQUAL E   &kp R  &mt GRAVE T             &kp Y                    &mt UNDER U  &mt EXCLAMATION I  &kp O    &mt PERCENT P  &mt DEL BACKSPACE
+&kp ESC             &kp Q          &kp W            &HT EQUAL E   &kp R  &mt GRAVE T             &kp Y                    &mt UNDER U  &mt EXCLAMATION I  &kp O    &mt PERCENT P  &mt DEL BACKSPACE
 &mt LEFT_SHIFT TAB  &mt AT_SIGN A  &mt ASTERISK S   &mt DOLLAR D  &kp F  &kp G                   &mt HASH H               &kp J        &kp K              &kp L    &kp SEMI       &kp SQT
 &mt LCTRL LEFT_GUI  &kp Z          &mt AMPERSAND X  &mt CARET C   &kp V  &mt LEFT_PARENTHESIS B  &mt RIGHT_PARENTHESIS N  &mt MINUS M  &kp COMMA          &kp DOT  &kp FSLH       &mt RIGHT_BRACKET LEFT_BRACKET
                                                     &mo 1         &mo 2  &mt LEFT_ALT SPACE      &mt LS(LEFT_ALT) ENTER   &mo 2        &mo 1
