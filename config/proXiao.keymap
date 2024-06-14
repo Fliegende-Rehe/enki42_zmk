@@ -51,9 +51,9 @@
 
 / {
     behaviors {
-        HT: HT {
+        SHT: SHT {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT";
+            label = "SHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -73,10 +73,10 @@
             //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp ESC             &kp Q          &kp W            &HT EQUAL E   &kp R  &mt GRAVE T             &kp Y                    &mt UNDER U  &mt EXCLAMATION I  &kp O    &mt PERCENT P  &mt DEL BACKSPACE
-&mt LEFT_SHIFT TAB  &mt AT_SIGN A  &mt ASTERISK S   &mt DOLLAR D  &kp F  &kp G                   &mt HASH H               &kp J        &kp K              &kp L    &kp SEMI       &kp SQT
-&mt LCTRL LEFT_GUI  &kp Z          &mt AMPERSAND X  &mt CARET C   &kp V  &mt LEFT_PARENTHESIS B  &mt RIGHT_PARENTHESIS N  &mt MINUS M  &kp COMMA          &kp DOT  &kp FSLH       &mt RIGHT_BRACKET LEFT_BRACKET
-                                                    &mo 1         &mo 2  &mt LEFT_ALT SPACE      &mt LS(LEFT_ALT) ENTER   &mo 2        &mo 1
+&mt LEFT_GUI ESCAPE  &kp Q           &kp W             &SHT EQUAL E   &kp R  &SHT GRAVE T             &kp Y                     &SHT UNDER U  &SHT EXCLAMATION I  &kp O    &SHT PERCENT P  &mt DEL BACKSPACE
+&mt LEFT_SHIFT TAB   &SHT AT_SIGN A  &SHT ASTERISK S   &SHT DOLLAR D  &kp F  &kp G                    &SHT HASH H               &kp J         &kp K               &kp L    &kp SEMI        &kp SQT
+&mt LCTRL LEFT_GUI   &kp Z           &SHT AMPERSAND X  &SHT CARET C   &kp V  &SHT LEFT_PARENTHESIS B  &SHT RIGHT_PARENTHESIS N  &SHT MINUS M  &kp COMMA           &kp DOT  &kp FSLH        &SHT RIGHT_BRACKET LEFT_BRACKET
+                                                       &mo 1          &mo 2  &mt LEFT_ALT SPACE       &mt LS(LEFT_ALT) ENTER    &mo 2         &mo 1
             >;
         };
 
