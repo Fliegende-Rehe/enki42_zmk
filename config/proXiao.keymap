@@ -93,10 +93,10 @@
             //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&none           &none  &none  &none  &none  &bt BT_CLR  &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4
-&kp LEFT_SHIFT  &none  &none  &none  &none  &bt BT_NXT  &sys_reset   &none  &kp F5  &kp F6   &kp F7   &kp F8
-&kp LCTRL       &none  &none  &none  &none  &none       &none        &none  &kp F9  &kp F10  &kp F11  &kp F12
-                              &none  &to 0  &none       &none        &to 0  &none
+&none           &none  &none  &none  &none  &bt BT_CLR    &bootloader  &none  &kp F1  &kp F2   &kp F3   &kp F4
+&kp LEFT_SHIFT  &none  &none  &none  &none  &bt BT_SEL 0  &sys_reset   &none  &kp F5  &kp F6   &kp F7   &kp F8
+&kp LCTRL       &none  &none  &none  &none  &bt BT_SEL 1  &none        &none  &kp F9  &kp F10  &kp F11  &kp F12
+                              &none  &to 0  &none         &none        &to 0  &none
             >;
         };
     };
