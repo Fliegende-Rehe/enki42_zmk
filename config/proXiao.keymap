@@ -74,8 +74,8 @@
 
             bindings = <
 &mt LEFT_GUI ESCAPE  &SHT QUESTION Q  &kp W             &SHT EQUAL E   &kp R  &SHT GRAVE T             &kp Y                     &SHT UNDER U  &SHT EXCLAMATION I  &kp O    &SHT PERCENT P  &mt DEL BACKSPACE
-&mt LEFT_SHIFT TAB   &SHT AT_SIGN A   &SHT ASTERISK S   &SHT DOLLAR D  &kp F  &kp G                    &SHT HASH H               &kp J         &kp K               &kp L    &kp SEMI        &kp SQT
-&mt LCTRL LEFT_GUI   &kp Z            &SHT AMPERSAND X  &SHT CARET C   &kp V  &SHT LEFT_PARENTHESIS B  &SHT RIGHT_PARENTHESIS N  &SHT MINUS M  &kp COMMA           &kp DOT  &kp FSLH        &SHT RIGHT_BRACKET LEFT_BRACKET
+&mt LEFT_SHIFT TAB   &SHT AT_SIGN A   &SHT ASTERISK S   &SHT DOLLAR D  &kp F  &kp G                    &SHT HASH H               &kp J         &kp K               &kp L    &mt SEMI SEMI   &mt SQT SQT
+&mt LCTRL LEFT_GUI   &kp Z            &SHT AMPERSAND X  &SHT CARET C   &kp V  &SHT LEFT_PARENTHESIS B  &SHT RIGHT_PARENTHESIS N  &SHT MINUS M  &mt COMMA COMMA     &kp DOT  &kp FSLH        &SHT RIGHT_BRACKET LEFT_BRACKET
                                                         &mo 1          &mo 1  &mt LEFT_ALT SPACE       &mt LS(LEFT_ALT) ENTER    &mo 1         &mo 1
             >;
         };
