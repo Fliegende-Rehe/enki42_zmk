@@ -13,7 +13,10 @@
 #define RSE 2
 #define ADJ 3
 
-&mt { tapping-term-ms = <300>; };
+&mt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
 
 / {
     macros {
