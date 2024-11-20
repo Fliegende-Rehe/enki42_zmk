@@ -13,38 +13,15 @@
 #define RSE 2
 #define ADJ 3
 
-&mt { quick_tap_ms = <220>; };
+&mt { tapping-term-ms = <300>; };
 
 / {
     macros {
         // Windows sleep key
-
-        win_sleep: win_sleep {
-            wait-ms = <50>;
-            tap-ms = <5>;
-            compatible = "zmk,behavior-macro";
-            label = "WIN_SLEEP_KEY";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_GUI &kp TAB &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp DOWN_ARROW &kp ENTER &kp ENTER>,
-                <&macro_tap>;
-        };
     };
 };
 
 / {
-    behaviors {
-        LHT: LHT {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <299>;
-            flavor = "tap-preferred";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,7 +29,7 @@
             bindings = <
 &kp ESCAPE    &kp Q  &kp W       &mt EQUAL E   &kp R        &mt TILDE T             &kp Y      &mt UNDERSCORE U  &mt PIPE I   &kp O       &mt PLUS P  &kp BACKSPACE
 &kp TAB       &kp A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &mt GRAVE G             &kp H      &mt RCTRL J       &mt RSHFT K  &mt RALT L  &kp SEMI    &kp SQT
-&kp LEFT_GUI  &kp Z  &kp X       &kp C         &kp V        &mt NON_US_BACKSLASH B  &kp N      &mt MINUS M       &kp COMMA    &kp DOT     &kp SLASH   &LHT RIGHT_BRACKET LEFT_BRACKET
+&kp LEFT_GUI  &kp Z  &kp X       &kp C         &kp V        &mt NON_US_BACKSLASH B  &kp N      &mt MINUS M       &kp COMMA    &kp DOT     &kp SLASH   &none
                                  &mo 1         &mo 1        &kp SPACE               &kp ENTER  &mo 1             &mo 1
             >;
         };
