@@ -52,6 +52,16 @@
             bindings = <&kp LC(V)>;
             key-positions = <19 20>;
         };
+
+        select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <7 8>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <3 4>;
+        };
     };
 
     keymap {
