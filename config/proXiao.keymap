@@ -32,12 +32,12 @@
 
         LL {
             bindings = <&kp LS(LALT)>;
-            key-positions = <14 15 14 15 14 15>;
+            key-positions = <15 15 15 16>;
         };
 
         RR {
             bindings = <&kp LS(LALT)>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
     };
 
