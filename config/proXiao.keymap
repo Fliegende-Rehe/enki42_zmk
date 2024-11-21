@@ -44,12 +44,12 @@
         };
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LC(C)>;
             key-positions = <15 16>;
         };
 
         paste {
-            bindings = <&kp C_AC_PASTE>;
+            bindings = <&kp LC(V)>;
             key-positions = <19 20>;
         };
     };
