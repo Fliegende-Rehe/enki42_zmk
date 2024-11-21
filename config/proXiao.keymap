@@ -31,14 +31,19 @@
     combos {
         compatible = "zmk,combos";
 
-        LL {
+        next_input {
             bindings = <&kp LS(LALT)>;
-            key-positions = <15 15 15 16>;
+            key-positions = <38 39>;
         };
 
-        RR {
-            bindings = <&kp LS(LALT)>;
-            key-positions = <20 19>;
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <15 16>;
+        };
+
+        paste {
+            bindings = <&kp LS(V)>;
+            key-positions = <19 20>;
         };
     };
 
