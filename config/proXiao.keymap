@@ -43,24 +43,14 @@
             key-positions = <38 39>;
         };
 
-        copy {
-            bindings = <&kp LC(C)>;
+        l_paste {
+            bindings = <&kp LC(V)>;
             key-positions = <15 16>;
         };
 
-        paste {
+        r_paste {
             bindings = <&kp LC(V)>;
             key-positions = <19 20>;
-        };
-
-        select_all {
-            bindings = <&kp LC(A)>;
-            key-positions = <7 8>;
-        };
-
-        cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <3 4>;
         };
     };
 
@@ -78,10 +68,10 @@
 
         control {
             bindings = <
-&none       &none  &none     &kp UP    &none        &none                   &none              &none       &kp C_VOL_UP  &none       &none  &none
-&kp LA(F4)  &none  &kp LEFT  &kp DOWN  &kp RIGHT    &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT))  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &kp LG(LS(S))
-&mo 3       &none  &none     &none     &none        &none                   &none              &none       &none         &none       &none  &mo 3
-                             &none     &kp LS(TAB)  &trans                  &trans             &kp DEL     &none
+&none  &none  &none     &kp UP    &none        &none                   &none              &none       &kp C_VOL_UP  &none       &none  &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT    &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT))  &kp C_PREV  &kp C_VOL_DN  &kp C_NEXT  &none  &kp LG(LS(S))
+&mo 3  &none  &none     &none     &none        &none                   &none              &none       &none         &none       &none  &mo 3
+                        &none     &kp LS(TAB)  &trans                  &trans             &kp DEL     &none
             >;
         };
 
