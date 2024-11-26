@@ -45,12 +45,12 @@
 
         window2left {
             bindings = <&kp LS(LG(LEFT))>;
-            key-positions = <15 16>;
+            key-positions = <2 3 4>;
         };
 
         window2right {
             bindings = <&kp LS(LG(RIGHT))>;
-            key-positions = <19 20>;
+            key-positions = <7 8 9>;
         };
     };
 
