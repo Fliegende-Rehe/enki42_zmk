@@ -43,13 +43,13 @@
             key-positions = <38 39>;
         };
 
-        l_paste {
-            bindings = <&kp LC(V)>;
+        window2left {
+            bindings = <&kp LS(LG(LEFT))>;
             key-positions = <15 16>;
         };
 
-        r_paste {
-            bindings = <&kp LC(V)>;
+        window2right {
+            bindings = <&kp LS(LG(RIGHT))>;
             key-positions = <19 20>;
         };
     };
