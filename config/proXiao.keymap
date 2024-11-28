@@ -95,10 +95,10 @@
 
         game {
             bindings = <
-&trans  &kp TAB    &kp Q  &kp W   &kp E     &kp R      &none      &none     &kp UP    &none      &kp ESC  &trans
-&kp G   &kp LSHFT  &kp A  &kp S   &kp D     &kp F      &none      &kp LEFT  &kp DOWN  &kp RIGHT  &none    &kp C_VOL_UP
-&kp M   &kp LCTRL  &kp Z  &kp X   &kp C     &kp V      &kp N1     &kp N2    &kp N3    &kp N4     &kp N5   &kp C_VOL_DN
-                          &trans  &kp LALT  &kp SPACE  &kp ENTER  &tog 4    &trans
+&trans  &kp TAB    &kp Q  &kp W   &kp E     &kp R      &none      &none      &kp UP     &none      &kp ESC    &trans
+&kp G   &kp LSHFT  &kp A  &kp S   &kp D     &kp F      &none      &kp LEFT   &kp DOWN   &kp RIGHT  &none      &kp C_VOL_UP
+&kp M   &kp LCTRL  &kp Z  &kp X   &kp C     &kp V      &mt F1 N1  &mt F2 N2  &mt F3 N3  &mt F4 N4  &mt F5 N5  &kp C_VOL_DN
+                          &trans  &kp LALT  &kp SPACE  &kp ENTER  &tog 4     &trans
             >;
         };
     };
